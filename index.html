@@ -48,16 +48,33 @@
 
             <ul class="dropdown-menu">
               <li class="nav-item">
-                <a class="nav-link" href="#">Todo list</a>
+                <a class="nav-link" href="#"
+                  ><img src="images/icon-todo.svg" alt="Todo" /> Todo list</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Calendar</a>
+                <a class="nav-link" href="#"
+                  ><img
+                    src="images/icon-calendar.svg"
+                    alt="Calendar"
+                  />Calendar</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Reminders</a>
+                <a class="nav-link" href="#"
+                  ><img
+                    src="images/icon-reminders.svg"
+                    alt="Reminders"
+                  />Reminders</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Planning</a>
+                <a class="nav-link" href="#"
+                  ><img
+                    src="images/icon-planning.svg"
+                    alt="Planning"
+                  />Planning</a
+                >
               </li>
             </ul>
           </li>
@@ -91,32 +108,106 @@
         </ul>
       </div>
 
-      <!-- <div class="navbar-mobile">
-        <div class="nav-trigger">
-          <img src="images/icon-menu.svg" alt="" /> toggle
+      <div class="navbar-mobile">
+        <div class="nav-trigger" id="nav-trigger" role="button">
+          <img src="images/icon-menu.svg" alt="" />
         </div>
-      </div> -->
+      </div>
+
+      <div class="drawer" id="drawer">
+        <div class="drawer-overlay"></div>
+        <div class="drawer-content">
+          <div class="drawer-closeicon">
+            <img src="images/icon-close-menu.svg" alt="icon-close-menu" />
+          </div>
+          <ul class="drawer-menu">
+            <li class="drawer-list dropdown">
+              <a class="drawer-link" href="#"
+                >Features<img
+                  class="caret"
+                  src="images/icon-arrow-down.svg"
+                  alt=""
+              /></a>
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><img src="images/icon-todo.svg" alt="Todo" /> Todo list</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><img
+                      src="images/icon-calendar.svg"
+                      alt="Calendar"
+                    />Calendar</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><img
+                      src="images/icon-reminders.svg"
+                      alt="Reminders"
+                    />Reminders</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><img
+                      src="images/icon-planning.svg"
+                      alt="Planning"
+                    />Planning</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="drawer-list dropdown">
+              <a class="drawer-link" href="#">
+                Company<img
+                  class="caret"
+                  src="images/icon-arrow-down.svg"
+                  alt=""
+              /></a>
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">History</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Our Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+              </ul>
+            </li>
+            <li class="drawer-list">
+              <a class="drawer-link" href="#">Careers</a>
+            </li>
+            <li class="drawer-list">
+              <a class="drawer-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <section class="row">
       <div class="col col-1">
         <div class="data">
           <h1>Make remote work</h1>
-          <p>
+          <p class="subtitle">
             Get your team in sync, no matter your location.
             <span>
               Streamline processes, create team rituals, and watch productivity
               soar.</span
             >
           </p>
-
-          <button class="btn-learn">Learn more</button>
-          <div class="client-image">
-            <img src="images/client-databiz.svg" alt="databiz" />
-            <img src="images/client-audiophile.svg" alt="client-audiophile" />
-            <img src="images/client-meet.svg" alt="client-meet" />
-            <img src="images/client-maker.svg" alt="client-maker" />
-          </div>
+        </div>
+        <button class="btn-learn">Learn more</button>
+        <div class="client-image">
+          <img src="images/client-databiz.svg" alt="databiz" />
+          <img src="images/client-audiophile.svg" alt="client-audiophile" />
+          <img src="images/client-meet.svg" alt="client-meet" />
+          <img src="images/client-maker.svg" alt="client-maker" />
         </div>
       </div>
       <div class="col col-2">
@@ -126,6 +217,8 @@
         </div>
       </div>
     </section>
+
+    <script src="./app.js"></script>
     <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
