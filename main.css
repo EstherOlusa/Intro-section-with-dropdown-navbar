@@ -9,6 +9,8 @@ body {
   font-size: 18px;
   min-height: 100vh;
   margin: 0;
+  display: flex;
+  flex-direction: column;
   /* background-color: black; */
 }
 
@@ -280,6 +282,15 @@ h1 {
   width: 70px;
   height: auto;
 }
+.attribution {
+  padding-top: 30px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
 
 @media (min-width: 768px) {
   h1 {
@@ -339,7 +350,13 @@ h1 {
   .drawer {
     display: none;
   }
+
+  .attribution {
+    padding: 20px 0;
+    margin-top: auto;
+  }
 }
+
 /* .btn-learn {
   padding: 20px 40px;
   margin: auto;
